@@ -695,3 +695,105 @@ body.dark .contact-icons a:hover {
   }
 }
 
+/* Experience Section */
+.experience-section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #1e293b;
+}
+
+/* Experience Card Grid */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* Individual Experience Card */
+.experience-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideFadeUp 0.8s ease both;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.experience-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.experience-card .company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3b82f6;
+  margin-bottom: 5px;
+}
+
+.experience-card .duration {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.experience-card p {
+  font-size: 0.95rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* Dark Mode */
+.dark-mode .experience-section {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+.dark-mode .experience-section h2 {
+  color: #38bdf8;
+}
+
+.dark-mode .experience-card {
+  background-color: #334155;
+  color: #cbd5e1;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .experience-card h3 {
+  color: #a5b4fc;
+}
+
+.dark-mode .experience-card .company {
+  color: #60a5fa;
+}
+
+.dark-mode .experience-card .duration {
+  color: #94a3b8;
+}
+
+.dark-mode .experience-card p {
+  color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 60px 20px;
+  }
+}
+
