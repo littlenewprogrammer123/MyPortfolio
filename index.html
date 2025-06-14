@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Vibin V - Front-End Developer | Java Full Stack Developer Portfolio">
+<meta name="keywords" content="HTML, CSS, JavaScript, React, Java, Full Stack, Portfolio">
+<meta name="author" content="Vibin V">
+
+
   <title>My Portfolio</title>
+
 
 
   <link rel="stylesheet" href="main.css" />
@@ -35,24 +41,37 @@
 
 
 
+
+
+
 </head>
 <body>
 
 <header>
   <div class="logo">
-     <h1>Vibin V</h1>
+    <h1>Vibin V</h1>
   </div>
+
+  <!-- Hamburger toggle button (visible only on mobile) -->
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
   <nav class="navbar" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </header>
+
 
 <section class="hero">
   <div class="hero-content">
@@ -61,6 +80,11 @@
       I am a <span id="typing" style="color: #38bdf8; font-weight: 600;"></span>
     </p>
     <a href="#projects" class="btn-primary">View Projects</a>
+    <a href="Source/Vibin_V_Resume.pdf" download class="btn-download">
+  <i class="fas fa-download"></i> Download Resume
+</a>
+
+
   </div>
   <div class="hero-image">
     <img src="Source/image2.jpg" alt="Vibin V - Front-End Developer" />
@@ -92,7 +116,7 @@
         <li><i class="devicon-react-original colored"></i> React.js</li>
         <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
         <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
-        <li><i class="devicon-express-original colored"></i> Express.js</li>
+        <li><i class="devicon-jquery-plain colored"></i> jQuery</li>
       </ul>
     </div>
 
@@ -136,6 +160,26 @@
     <!-- Add more cards here -->
   </div>
 </section>
+
+<section class="education-section" id="education">
+  <h2>Education</h2>
+  <div class="education-grid">
+    <div class="education-card">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <div class="institution">Noorul Islam College of Arts and Science</div>
+      <div class="duration">Completed: 2023</div>
+      <p>Studied core computer science concepts, including programming, data structures, and software development.</p>
+    </div>
+    <div class="education-card">
+      <h3>Diploma in Java Full Stack Development</h3>
+      <div class="institution">Network System</div>
+      <div class="duration">Completed: 2025</div>
+      <p>Specialized training in Java-based application development across front-end and back-end technologies.</p>
+    </div>
+  </div>
+</section>
+
+
 
 
 
@@ -194,10 +238,9 @@
       <i class="fab fa-linkedin"></i>
       LinkedIn
     </a>
-    <a href="https://twitter.com/#" target="_blank">
-      <i class="fab fa-twitter"></i>
-      Twitter
-    </a>
+    <a href="Source/Vibin_V_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i>Resume
+</a>
+
   </div>
 </section>
 
@@ -222,16 +265,23 @@
 </script>
 
 <script>
-const toggleBtn = document.getElementById('darkModeToggle');
+  const toggleBtn = document.getElementById('darkModeToggle');
 
-toggleBtn.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
+  const isDarkStored = localStorage.getItem('darkMode') === 'true';
+  if (isDarkStored) {
+    document.body.classList.add('dark-mode');
+    toggleBtn.setAttribute('aria-pressed', true);
+  }
 
-  const isDark = document.body.classList.contains('dark-mode');
-  toggleBtn.setAttribute('aria-pressed', isDark);
-});
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
 
+    const isDark = document.body.classList.contains('dark-mode');
+    toggleBtn.setAttribute('aria-pressed', isDark);
+    localStorage.setItem('darkMode', isDark);
+  });
 </script>
+
 
 <script>
   const skillBoxes = document.querySelectorAll('.skill-category');
@@ -264,6 +314,28 @@ toggleBtn.addEventListener('click', () => {
 </script>
 
 
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navbar = document.querySelector('.navbar');
+  const navLinks = document.querySelectorAll('.navbar a');
 
-  
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navbar.classList.toggle('show');
+  });
+
+  // Close nav when a link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      navbar.classList.remove('show');
+    });
+  });
+</script>
+
+
+
+
 </body>
+</html>
+
