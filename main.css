@@ -1165,10 +1165,53 @@ body.dark-mode {
     left: calc(100% - 28px); /* 60px width - 4px padding - 24px width */
   }
 }
-  /* .contact-icons {
-    flex-direction: column;
-    gap: 20px;
-  } */
+
+
+  .intro-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff; /* adjust if needed */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+
+  .cube-text {
+    display: inline-block;
+    height: 1.2em; /* match line height */
+    overflow: hidden;
+    color: #38bdf8;
+  }
+
+  .cube-text span {
+    display: block;
+    height: 1.2em;
+    line-height: 1.2em;
+    animation: cubeRotate 8s infinite;
+  }
+
+  @keyframes cubeRotate {
+    0%, 20% {
+      transform: translateY(0);
+    }
+    25%, 45% {
+      transform: translateY(-1.2em);
+    }
+    50%, 70% {
+      transform: translateY(-2.4em);
+    }
+    75%, 95% {
+      transform: translateY(-3.6em);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+
 
 
 
