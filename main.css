@@ -1185,6 +1185,7 @@ body.dark-mode {
     height: 1.2em; /* match line height */
     overflow: hidden;
     color: #38bdf8;
+    text-align: start;
   }
 
   .cube-text span {
