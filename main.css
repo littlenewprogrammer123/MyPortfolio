@@ -1168,15 +1168,17 @@ body.dark-mode {
 
 
   .intro-text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff; /* adjust if needed */
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    line-height: 1.2;
-    margin-top: 5px;
-  }
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  line-height: 1.2em;
+  margin-top: 5px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
 
   .cube-text {
     display: inline-block;
