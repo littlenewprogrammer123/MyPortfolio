@@ -476,7 +476,12 @@ transform: scale(1.05);
   padding: 16px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column; /* allows button to stick at bottom */
+  justify-content: space-between;
+  height: 100%; /* all cards stretch same */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   position: relative;
 }
 
 .project-card:hover {
@@ -501,6 +506,43 @@ transform: scale(1.05);
 .project-card p {
   color: #475569;
   font-size: 0.95rem;
+   flex-grow: 1; /* takes remaining space */
+  margin-bottom: 15px;
+}
+
+/* Style the button inside project cards */
+.project-card .btn-primary {
+  align-self: flex-start; /* keeps button aligned left */
+  margin-top: auto; /* forces button to bottom */
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0ea5e9; /* blue for live */
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-badge.freelance {
+  background: #10b981; /* green for freelance projects */
+}
+.project-card:hover .project-badge {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Dark mode badge styling */
+.dark-mode .project-badge {
+  color: #f1f5f9;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Contact */
@@ -1185,7 +1227,6 @@ body.dark-mode {
     height: 1.2em; /* match line height */
     overflow: hidden;
     color: #38bdf8;
-    text-align: start;
   }
 
   .cube-text span {
@@ -1212,6 +1253,128 @@ body.dark-mode {
       transform: translateY(0);
     }
   }
+
+  /* === Project Section Headings === */
+.project-heading {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 60px 0 30px;
+  font-weight: 700;
+  color: #0ea5e9;
+  position: relative;
+}
+
+.project-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #38bdf8;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Dark Mode Support for Project Headings */
+.dark-mode .project-heading {
+  color: #38bdf8;
+}
+
+.dark-mode .project-heading::after {
+  background: #60a5fa;
+}
+
+
+/* Testimonials Styling */
+.testimonial-card {
+  position: relative;
+  background: white;
+  padding: 40px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  font-style: italic;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: #475569;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  color: #0ea5e9;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Decorative quote icons */
+.quote-icon {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.quote-icon.end {
+  top: auto;
+  left: auto;
+  bottom: 15px;
+  right: 20px;
+}
+
+/* Dark Mode Fix */
+.dark-mode .testimonial-card {
+  background: #334155;
+  color: #e2e8f0;
+  box-shadow: 0 6px 18px rgba(255,255,255,0.05);
+}
+
+.dark-mode .testimonial-card p {
+  color: #f1f5f9;
+}
+
+.dark-mode .testimonial-card h4 {
+  color: #60a5fa;
+}
+
+.dark-mode .quote-icon {
+  color: #60a5fa;
+  opacity: 0.5;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Limit card width */
+.testimonial-card {
+  max-width: 600px;   /* controls size */
+  margin: auto;
+}
+.testimonials-section h2 {
+  text-align: center;   /* Center the heading */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #1e293b;
+}
+.dark-mode .testimonials-section h2 {
+  color: #38bdf8; /* Bright blue in dark mode */
+}
+
+
 
 
 
