@@ -3,47 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="Vibin V - Front-End Developer | Java Full Stack Developer Portfolio">
-<meta name="keywords" content="HTML, CSS, JavaScript, React, Java, Full Stack, Portfolio">
-<meta name="author" content="Vibin V">
-
+  <meta name="description" content="Vibin V - Front-End Developer | Java Full Stack Developer Portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript, React, Java, Full Stack, Portfolio">
+  <meta name="author" content="Vibin V">
 
   <title>My Portfolio</title>
-
-
 
   <link rel="stylesheet" href="main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Devicon CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-<!-- Devicon CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var typed = new Typed('#typing', {
-      strings: [
-        "Front-End Developer",
-        "React Enthusiast",
-        "Java Full Stack Developer",
-        "UI/UX Learner"
-      ],
-      typeSpeed: 60,
-      backSpeed: 40,
-      loop: true
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var typed = new Typed('#typing', {
+        strings: [
+          "Front-End Developer",
+          "React Enthusiast",
+          "Java Full Stack Developer",
+          "UI/UX Learner"
+        ],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      });
     });
-  });
-</script>
-
-
-
-
-
-
+  </script>
 </head>
 <body>
 
@@ -51,14 +40,12 @@
   <div class="logo">
     <h1>Vibin V</h1>
   </div>
-
-  <!-- Hamburger toggle button (visible only on mobile) -->
+  <!-- Mobile Menu Toggle -->
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
   </button>
-
   <nav class="navbar" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -72,41 +59,32 @@
   </nav>
 </header>
 
-
+<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
     <h1>Hello, I'm <span>Vibin V</span></h1>
-
-    <p class="intro-text">
-  I am <span class="cube-text">
-    <span>Java Full Stack Developer</span>
-    <span>Front-End Developer</span>
-    <span>React Enthusiast</span>
-    <span>UI/UX Learner</span>
-  </span>
-</p>
-<br>
+    <p class="intro-text">I am <span id="typing"></span></p>
+    <br>
     <a href="#projects" class="btn-primary">View Projects</a>
     <a href="Source/Vibin_V_Resume.pdf" download class="btn-download">
-  <i class="fas fa-download"></i> Download Resume
-</a>
-
-
+      <i class="fas fa-download"></i> Download Resume
+    </a>
   </div>
   <div class="hero-image">
     <img src="Source/image2.jpg" alt="Vibin V - Front-End Developer" />
   </div>
 </section>
 
+<!-- About Section -->
 <section id="about" class="about-section">
   <h2>About Me</h2>
-  <p>I specialize in building responsive and scalable web applications using modern technologies. With a keen eye for design and performance, I create intuitive and user-friendly digital experiences. Skilled in JavaScript, HTML, and CSS, I bring both creativity and technical expertise to every project, ensuring seamless functionality and engaging interfaces</p>
+  <p>I specialize in building responsive and scalable web applications using modern technologies. With a keen eye for design and performance, I create intuitive and user-friendly digital experiences. Skilled in JavaScript, HTML, CSS, and Java, I bring both creativity and technical expertise to every project.</p>
 </section>
 
+<!-- Skills Section -->
 <section id="skills" class="skills-section">
   <h2>Skills</h2>
   <div class="skills-grid">
-    
     <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
       <h3>Languages</h3>
       <ul class="skill-list">
@@ -116,7 +94,6 @@
         <li><i class="fab fa-java"></i> Java</li>
       </ul>
     </div>
-
     <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
       <h3>Frameworks & Libraries</h3>
       <ul class="skill-list">
@@ -126,7 +103,6 @@
         <li><i class="devicon-jquery-plain colored"></i> jQuery</li>
       </ul>
     </div>
-
     <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
       <h3>Tools & Platforms</h3>
       <ul class="skill-list">
@@ -136,7 +112,6 @@
         <li><i class="devicon-npm-original-wordmark colored"></i> npm</li>
       </ul>
     </div>
-
     <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
       <h3>Database & APIs</h3>
       <ul class="skill-list">
@@ -145,29 +120,35 @@
         <li><i class="fas fa-plug"></i> REST APIs</li>
       </ul>
     </div>
-    
   </div>
 </section>
 
+<!-- Experience Section -->
 <section class="experience-section" id="experience">
   <h2>Experience</h2>
   <div class="experience-grid">
     <div class="experience-card">
+      <h3>Freelance Web Developer</h3>
+      <div class="company">Self-employed</div>
+      <div class="duration">Present</div>
+      <p>Developed a live Medical Billing Website for a client, handling full project cycle including design, backend integration, and deployment.</p>
+    </div>
+    <div class="experience-card">
       <h3>HP Promoter</h3>
       <div class="company">Hewlett Packard</div>
       <div class="duration">September 2024 - May 2025</div>
-      <p>Promoted and sold HP laptops and accessories, delivered product demos, booked service requests, negotiated sales, and enhanced customer satisfaction through personalized assistance and support.</p>
+      <p>Promoted and sold HP laptops and accessories, delivered product demos, booked service requests, and enhanced customer satisfaction.</p>
     </div>
     <div class="experience-card">
       <h3>Technical Support Engineer</h3>
       <div class="company">Derik Groups</div>
       <div class="duration">March 2024 - August 2024</div>
-      <p> Provided software and hardware troubleshooting, configured PCs, and managed network issues. Assisted internal employees and customers by delivering efficient technical support and problem resolution.</p>
+      <p>Provided troubleshooting, configured PCs, and managed network issues while delivering efficient technical support.</p>
     </div>
-    <!-- Add more cards here -->
   </div>
 </section>
 
+<!-- Education Section -->
 <section class="education-section" id="education">
   <h2>Education</h2>
   <div class="education-grid">
@@ -175,163 +156,155 @@
       <h3>Bachelor of Computer Applications (BCA)</h3>
       <div class="institution">Noorul Islam College of Arts and Science</div>
       <div class="duration">Completed: 2023</div>
-      <p>Studied core computer science concepts, including programming, data structures, and software development.</p>
     </div>
     <div class="education-card">
       <h3>Diploma in Java Full Stack Development</h3>
       <div class="institution">Network System</div>
       <div class="duration">Completed: 2025</div>
-      <p>Specialized training in Java-based application development across front-end and back-end technologies.</p>
     </div>
   </div>
 </section>
 
-
-
-
-
+<!-- Projects Section -->
+<!-- Projects Section -->
 <section class="portfolio-section" id="projects">
   <h2>My Projects</h2>
+
+  <!-- Live Projects -->
+  <h3 class="project-heading">Live Projects</h3>
   <div class="projects-grid">
-    
+
+    <!-- Portfolio Website -->
     <div class="project-card">
-      <img src="Source/image3.jpeg" alt="Movie Booking App">
-      <h3>SunnyBooking - Movie Booking App</h3>
-      <p>A responsive React app to browse One Piece movies with teasers, ratings, and descriptions. Includes simulated ticket booking, dynamic routing, and reusable components for a seamless user experience.</p>
+      <span class="project-badge">Live</span>
+      <img src="Source/portfolio-preview.png" alt="Portfolio Website">
+      <h3>My Portfolio Website</h3>
+      <p>The website you’re currently viewing 🎉. A modern portfolio showcasing my skills, experience, and projects with responsive design and dark mode support.</p>
+      <a href="https://littlenewprogrammer123.github.io/MyPortfolio/" target="_blank" class="btn-primary">🔗 Click to Visit</a>
     </div>
 
+    <!-- Movie Booking Website -->
     <div class="project-card">
-      <img src="Source/images4.jpeg" alt="Portfolio Website">
-      <h3>DevLink - Developer Portfolio</h3>
-      <p>A modern, personal portfolio site featuring smooth navigation, responsive design, and clean layout using Flexbox and Grid. Built with HTML, CSS, and JS.</p>
+      <span class="project-badge">Live</span>
+      <img src="Source/image3.jpeg" alt="Movie Booking App">
+      <h3>SunnyBooking - Movie Booking App</h3>
+      <p>A responsive React app to browse One Piece movies with teasers, ratings, and ticket booking simulation. Includes dynamic routing and reusable components.</p>
+      <a href="https://littlenewprogrammer123.github.io/moviebookingapp/" target="_blank" class="btn-primary">🔗 Click to Visit</a>
     </div>
+
+    <!-- Medical Billing Website -->
+    <div class="project-card">
+      <span class="project-badge freelance">Freelance • Live</span>
+      <img src="Source/medical-billing.png" alt="Medical Billing Website">
+      <h3>Medical Billing Website</h3>
+      <p>A live freelancing project for a healthcare client. Secure billing system with database integration, responsive UI, and seamless user experience.</p>
+      <a href="https://capemedhealthcare.com/" target="_blank" class="btn-primary">🔗 Click to Visit</a>
+    </div>
+
+  </div>
+
+  <!-- Non-Live Projects -->
+  <h3 class="project-heading">Non-Live Projects</h3>
+  <div class="projects-grid">
 
     <div class="project-card">
       <img src="Source/images5.jpeg" alt="To-Do List App">
       <h3>TaskMate - To-Do List App</h3>
-      <p>An interactive to-do list that allows users to manage daily tasks with local storage support. Developed using Vanilla JavaScript, HTML, and CSS.</p>
+      <p>An interactive to-do list manager with local storage support. Built using Vanilla JavaScript, HTML, and CSS.</p>
     </div>
 
     <div class="project-card">
       <img src="Source/images6.jpeg" alt="Weather App">
       <h3>WeatherNow - Live Weather App</h3>
-      <p>Displays real-time weather data using a public API. Users can search any city and get instant weather updates. Built with Fetch API, HTML, and CSS.</p>
+      <p>Displays real-time weather data using a public API. Users can search any city and get instant updates. Built with Fetch API.</p>
     </div>
 
     <div class="project-card">
       <img src="Source/images7.jpeg" alt="Calculator App">
       <h3>QuickCalc - Smart Calculator</h3>
-      <p>A simple and elegant calculator supporting all basic operations, built with HTML, CSS, and JavaScript. Fully responsive with a smooth UI.</p>
+      <p>A clean and responsive calculator app supporting all basic operations. Built with HTML, CSS, and JavaScript.</p>
     </div>
 
   </div>
 </section>
 
 
-<section class="contact-section" id="contact">
-  <h2>Contact Me</h2>
-  <p>Feel free to reach out through any of the platforms below!</p>
+<!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+  <h2>What Clients Say</h2>
+  <div class="testimonials-grid">
 
-  <div class="contact-icons">
-    <a href="mailto:vibinworkmail@gmail.com" target="_blank">
-      <i class="fas fa-envelope"></i>
-      Email
-    </a>
-    <a href="https://github.com/littlenewprogrammer123" target="_blank">
-      <i class="fab fa-github"></i>
-      GitHub
-    </a>
-    <a href="https://www.linkedin.com/in/vibinvlinkin" target="_blank">
-      <i class="fab fa-linkedin"></i>
-      LinkedIn
-    </a>
-    <a href="Source/Vibin_V_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i>Resume
-</a>
+    <div class="testimonial-card">
+  <span class="quote-icon">❝</span>
+  <p>Vibin delivered our medical billing system on time and exceeded expectations. 
+  The site is secure, responsive, and easy to use. Highly recommended!</p>
+  <h4>- CapeMed Healthcare</h4>
+  <span class="quote-icon end">❞</span>
+</div>
+
+
+    <!-- Add more testimonials in future if needed -->
+    <!--
+    <div class="testimonial-card">
+      <p>“Vibin is dedicated, communicates clearly, and builds exactly what you need.”</p>
+      <h4>- Another Client</h4>
+    </div>
+    -->
 
   </div>
 </section>
 
 
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out through any of the platforms below!</p>
+  <div class="contact-icons">
+    <a href="mailto:vibinworkmail@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
+    <a href="https://github.com/littlenewprogrammer123" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+    <a href="https://www.linkedin.com/in/vibinvlinkin" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+    <a href="Source/Vibin_V_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i>Resume</a>
+  </div>
+</section>
+
+<!-- Dark Mode Toggle -->
 <button id="darkModeToggle" aria-label="Toggle Dark Mode" aria-pressed="false">
   <span class="icon sun">☀️</span>
   <span class="icon moon">🌙</span>
   <span class="toggle-circle"></span>
 </button>
 
-
-
-
-
-
 <footer>
   &copy; <span id="year"></span> Vibin V. All rights reserved.
 </footer>
 
+<!-- Scripts -->
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 <script>
   const toggleBtn = document.getElementById('darkModeToggle');
-
   const isDarkStored = localStorage.getItem('darkMode') === 'true';
   if (isDarkStored) {
     document.body.classList.add('dark-mode');
     toggleBtn.setAttribute('aria-pressed', true);
   }
-
   toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
-
     const isDark = document.body.classList.contains('dark-mode');
     toggleBtn.setAttribute('aria-pressed', isDark);
     localStorage.setItem('darkMode', isDark);
   });
 </script>
-
-
-<script>
-  const skillBoxes = document.querySelectorAll('.skill-category');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.animationPlayState = 'running';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.3
-  });
-
-  skillBoxes.forEach(box => {
-    box.style.animationPlayState = 'paused';
-    observer.observe(box);
-  });
-</script>
-
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true, // Animates only once on scroll
-  });
-</script>
-
-
 <script>
   const menuToggle = document.getElementById('menuToggle');
   const navbar = document.querySelector('.navbar');
   const navLinks = document.querySelectorAll('.navbar a');
-
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     navbar.classList.toggle('show');
   });
-
-  // Close nav when a link is clicked
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       menuToggle.classList.remove('active');
@@ -339,10 +312,9 @@
     });
   });
 </script>
-
-
-
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, once: true });</script>
 
 </body>
 </html>
-
