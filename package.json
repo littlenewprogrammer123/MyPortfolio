@@ -1,6 +1,7 @@
 {
   "name": "myportfolio",
   "version": "1.0.0",
+  "type": "module",
   "description": "Welcome to my personal portfolio website!  \r This is where I showcase my **projects, skills, and experience** as a developer.",
   "main": "index.js",
   "scripts": {
