@@ -1,0 +1,29 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio website!  \r This is where I showcase my **projects, skills, and experience** as a developer.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlenewprogrammer123/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlenewprogrammer123/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/littlenewprogrammer123/MyPortfolio#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.1.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^7.3.1"
+  }
+}
