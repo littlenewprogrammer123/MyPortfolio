@@ -14,6 +14,7 @@ const Skills = () => {
             <li><i className="fab fa-css3-alt"></i> CSS3</li>
             <li><i className="fab fa-js-square"></i> JavaScript</li>
             <li><i className="fab fa-java"></i> Java</li>
+            <li><i className="fab fa-python"></i> Python</li>
           </ul>
         </div>
         <div className="skill-category" data-aos="fade-up" data-aos-delay="200">
@@ -23,6 +24,9 @@ const Skills = () => {
             <li><i className="fab fa-bootstrap"></i> Bootstrap</li>
             <li><i className="devicon-nodejs-plain colored"></i> Node.js</li>
             <li><i className="devicon-jquery-plain colored"></i> jQuery</li>
+            <li><i className="devicon-tailwindcss-original colored"></i> Tailwind CSS</li>
+            <li><i className="devicon-django-plain colored"></i> Django</li>
+            <li><i className="fas fa-server backend-icon"></i> Django REST Framework</li>
           </ul>
         </div>
         <div className="skill-category" data-aos="fade-up" data-aos-delay="300">
@@ -39,6 +43,7 @@ const Skills = () => {
           <ul className="skill-list">
             <li><i className="devicon-mysql-plain colored"></i> MySQL</li>
             <li><i className="devicon-mongodb-plain colored"></i> MongoDB</li>
+            <li><i className="fas fa-database backend-icon"></i> Supabase</li>
             <li><i className="fas fa-plug"></i> REST APIs</li>
           </ul>
         </div>
@@ -48,6 +53,7 @@ const Skills = () => {
             <li><i className="fab fa-java backend-icon"></i> Spring Boot</li>
             <li><i className="fas fa-plug backend-icon"></i> REST APIs</li>
             <li><i className="fas fa-project-diagram backend-icon"></i> WebSockets</li>
+            <li><i className="fas fa-shield-alt backend-icon"></i> JWT Authentication</li>
           </ul>
         </div>
       </div>

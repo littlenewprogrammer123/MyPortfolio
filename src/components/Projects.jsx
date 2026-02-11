@@ -1,4 +1,5 @@
 import React from 'react';
+import resumebuildproPreview from '../assets/resumebuildpro-preview.png';
 import portfolioPreview from '../assets/portfolio-preview.png';
 import movieBookingImage from '../assets/image3.jpeg';
 import medicalBillingImage from '../assets/medical-billing.png';
@@ -16,13 +17,13 @@ const Projects = () => {
       {/* Live Projects */}
       <h3 className="project-heading">Live Projects</h3>
       <div className="projects-grid">
-        {/* Portfolio Website */}
+        {/* ResumeBuildPro */}
         <div className="project-card">
           <span className="project-badge">Live</span>
-          <img src={portfolioPreview} alt="Portfolio Website" />
-          <h3>My Portfolio Website</h3>
-          <p>The website you're currently viewing 🎉. A modern portfolio showcasing my skills, experience, and projects with responsive design and dark mode support.</p>
-          <a href="https://littlenewprogrammer123.github.io/MyPortfolio/" target="_blank" rel="noopener noreferrer" className="btn-primary">🔗 Click to Visit</a>
+          <img src={resumebuildproPreview} alt="ResumeBuildPro" />
+          <h3>🔥 ResumeBuildPro – Smart Resume Intelligence Platform</h3>
+          <p>A production-ready resume platform that not only generates professional resumes but also evaluates them using a custom scoring engine.</p>
+          <a href="https://resumebuildpro.com/" target="_blank" rel="noopener noreferrer" className="btn-primary">🔗 Click to Visit</a>
         </div>
 
         {/* Movie Booking Website */}

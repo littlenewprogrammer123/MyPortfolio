@@ -6,7 +6,10 @@ const About = () => {
   return (
     <section id="about" className="about-section">
       <h2>About Me</h2>
-      <p>I am a Java Full Stack Developer with hands-on experience building real-world web applications and interactive user interfaces. I have a strong foundation in Java, Spring Boot, JavaScript, HTML, and CSS, and I focus on writing clean, maintainable code with attention to performance and usability. With experience across frontend development, backend integration, and deployment, I enjoy turning requirements into reliable, user-centric solutions. If you are still reading, I encourage you to explore the live projects below to see these skills in action.</p>
+      <p>I am a Full Stack Developer with hands-on experience building production-ready web applications from frontend interfaces to backend APIs and deployment.</p>
+      <p>Recently, I developed a Resume Intelligence Platform that includes dynamic preview rendering, automated PDF generation, keyword-based resume scoring, and job description matching logic.</p>
+      <p>My expertise spans React, Django, Java, and RESTful API design. I focus on building scalable, maintainable systems with clean architecture and strong performance.</p>
+      <p>I enjoy solving real-world problems by turning complex requirements into reliable, user-centric applications.</p>
     </section>
   );
 };

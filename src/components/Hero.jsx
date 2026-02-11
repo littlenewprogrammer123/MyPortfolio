@@ -47,6 +47,7 @@ const Hero = () => {
         <a href={resumePDF} download className="btn-download" style={{ marginLeft: '15px' }}>
           <i className="fas fa-download"></i> Download Resume
         </a>
+
       </div>
       <div className="hero-image">
         <img src={resumeImage} alt="Vibin V - Front-End Developer" />
