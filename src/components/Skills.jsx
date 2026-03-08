@@ -24,7 +24,7 @@ const Skills = () => {
             <li><i className="fab fa-bootstrap"></i> Bootstrap</li>
             <li><i className="devicon-nodejs-plain colored"></i> Node.js</li>
             <li><i className="devicon-jquery-plain colored"></i> jQuery</li>
-            <li><i className="devicon-tailwindcss-original colored"></i> Tailwind CSS</li>
+            <li><i className="devicon-tailwindcss-plain colored"></i> Tailwind CSS</li>
             <li><i className="devicon-django-plain colored"></i> Django</li>
             <li><i className="fas fa-server backend-icon"></i> Django REST Framework</li>
           </ul>
