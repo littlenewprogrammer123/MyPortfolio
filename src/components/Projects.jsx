@@ -6,6 +6,7 @@ import medicalBillingImage from '../assets/medical-billing.png';
 import todoAppImage from '../assets/images5.jpeg';
 import weatherAppImage from '../assets/images6.jpeg';
 import calculatorImage from '../assets/images7.jpeg';
+import landingPageImage from '../assets/landing-page.png';
 
 // Projects component - Converted from original HTML projects section
 // No visual or behavioral changes - pure mechanical migration
@@ -17,6 +18,19 @@ const Projects = () => {
       {/* Live Projects */}
       <h3 className="project-heading">Live Projects</h3>
       <div className="projects-grid">
+        {/* Aethera AI Landing Page */}
+        <div className="project-card">
+          <span className="project-badge">Live</span>
+          <img src={landingPageImage} alt="Aethera AI Landing Page" />
+          <h3>Aethera AI – SaaS Landing Page</h3>
+          <p>
+            A modern AI SaaS landing page designed for high conversion and clean user experience.
+            This project focuses on a strong hero section, smooth animations, and a product-focused layout that feels like a real SaaS product.
+            This is a landing page project (single page only).
+          </p>
+          <a href="https://splendorous-alpaca-150c28.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-primary">🔗 Click to Visit</a>
+        </div>
+
         {/* ResumeBuildPro */}
         <div className="project-card">
           <span className="project-badge">Live</span>
